@@ -2,6 +2,32 @@
 # Steps :
 # 1) Using stack
 
+############################################
+# trial # 2
+# Working approach using stack
+# Runtime: 224 ms, faster than 85.93% of Python3 online submissions for Range Sum of BST.
+# Memory Usage: 21.9 MB, less than 13.86% of Python3 online submissions for Range Sum of BST.
+# based on soltuion : https://www.youtube.com/watch?v=Re0QTM4hBuI
+############################################
+class Solution:
+    def rangeSumBST(self, root: TreeNode, L: int, R: int) -> int:
+        sum = 0
+        
+        stack = []
+        stack.append(root)
+
+        while stack:
+            nodeVal = stack.pop()
+
+            if nodeVal.val >= L and nodeVal.val <= R:
+                sum += nodeVal.val
+            if nodeVal.val > L and nodeVal.left:
+                stack.append(nodeVal.left)
+            if nodeVal.val < R and nodeVal.right :
+                stack.append(nodeVal.right)
+
+        return sum
+    
 
 ############################################
 # trial # 1
