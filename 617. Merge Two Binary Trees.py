@@ -20,3 +20,26 @@ class Solution:
             return t2 or t1
 
         
+#########################################
+##2nd trial
+
+# Runtime: 80 ms, faster than 67.27% of Python3 online submissions for Search in a Binary Search Tree.
+# Memory Usage: 15.7 MB, less than 57.65% of Python3 online submissions for Search in a Binary Search Tree.
+
+
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def searchBST(self, root: TreeNode, val: int) -> TreeNode:
+        if root and root:
+            if root.val == val:
+                return  root
+            else:
+                next_search = root.left if val < root.val else root.right
+                return self.searchBST(next_search,val) 
+        else:
+            return None
