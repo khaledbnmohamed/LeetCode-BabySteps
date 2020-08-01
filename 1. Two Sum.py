@@ -17,3 +17,21 @@ class Solution:
             except:
                 nums[i] = stored_val
 
+
+                
+#############################################################################
+
+##2nd attempt using hash table
+# Runtime: 60 ms, faster than 56.59% of Python3 online submissions for Two Sum.
+# Memory Usage: 15.3 MB, less than 25.87% of Python3 online submissions for Two Sum.
+    
+    
+    class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        dict = {}
+        for i in range(len(nums)):
+            if nums[i] in dict:
+                return [i,nums.index(dict[nums[i]])]
+
+            else:
+                dict[target-nums[i]] = nums[i]
