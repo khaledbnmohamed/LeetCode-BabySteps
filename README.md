@@ -28,3 +28,9 @@ There is an apparent naive or brute force solution that runs in O(N²), O(2^N) o
 
 *But the biggest giveaway is that the thing you are looking for is often some kind of optimal, like the longest sequence or shortest sequence of something that satisfies a given condition exactly.*
 https://medium.com/outco/how-to-solve-sliding-window-problems-28d67601a66
+
+
+
+##############################################################################
+## Good Links
+https://backtobackswe.com/platform/content/the-change-making-problem/solutions
