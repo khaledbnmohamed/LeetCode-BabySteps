@@ -1,6 +1,9 @@
 # LeetCode-BabySteps
 Add my solution to problems in Leetcode with progress 
 =======================================================
+## Excel Sheet with all details:
+[https://docs.google.com/spreadsheets/d/1u3vq2huj6GrYRTBzjg0zDQhRR1dPFQZ3jVcSP0aYLcQ/edit?usp=sharing]
+
 ## Combinations Problems
 ![](https://github.com/khaledbnmohamed/LeetCode-BabySteps/blob/master/Images/image.png)
 
