@@ -33,3 +33,5 @@ https://medium.com/outco/how-to-solve-sliding-window-problems-28d67601a66
 ##############################################################################
 ## Good Links
 https://backtobackswe.com/platform/content/the-change-making-problem/solutions
+
+[DP patterns](https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns/439810?page=2)
