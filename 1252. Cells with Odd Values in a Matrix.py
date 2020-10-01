@@ -21,3 +21,18 @@ class Solution:
                 if matrix[i][j] % 2 != 0:
                     counter += 1
         return counter
+#2nd trial
+# Runtime: 36 ms, faster than 96.33% of Python3 online submissions for Cells with Odd Values in a Matrix.
+#Memory Usage: 14.1 MB, less than 11.90% of Python3 online submissions for Cells with Odd Values in a Matrix.
+
+class Solution:
+    def oddCells(self, n: int, m: int, indices: List[List[int]]) -> int:
+        
+        x, y = [0] * n, [0] * m
+        for i in indices:
+            x[i[0]] += 1
+            y[i[1]] += 1
+        #https://stackoverflow.com/a/20639246/5627553
+        
+        #https://leetcode.com/problems/cells-with-odd-values-in-a-matrix/discuss/813726/Short-sweet-efficient-Python-wexplanation.
+        return sum([1 for j in y for i in x if (j+i) % 2])
