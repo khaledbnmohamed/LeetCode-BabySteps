@@ -18,8 +18,9 @@
 
 
 
-
-
+# brute force solution
+# Runtime: 44 ms, faster than 92.85% of Python3 online submissions for Search a 2D Matrix.
+# Memory Usage: 14.5 MB, less than 85.38% of Python3 online submissions for Search a 2D Matrix.
 
 
 
