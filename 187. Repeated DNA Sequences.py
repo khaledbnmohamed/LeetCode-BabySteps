@@ -2,6 +2,13 @@
 
 
 
+
+
+
+# 1st trial , brute force solution
+# Runtime: 64 ms, faster than 68.81% of Python3 online submissions for Repeated DNA Sequences.
+# Memory Usage: 27.8 MB, less than 5.88% of Python3 online submissions for Repeated DNA Sequences.
+
 class Solution:
     def findRepeatedDnaSequences(self, s: str) -> List[str]:
         dict = {}
