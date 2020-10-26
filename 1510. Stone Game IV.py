@@ -1,5 +1,7 @@
 #https://leetcode.com/problems/stone-game-iv/
 
+# Runtime: 2900 ms, faster than 33.33% of Python3 online submissions for Stone Game IV.
+# Memory Usage: 14.8 MB, less than 6.86% of Python3 online submissions for Stone Game IV.
 
 class Solution:
     def winnerSquareGame(self, n: int) -> bool:
