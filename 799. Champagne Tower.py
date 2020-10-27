@@ -1,5 +1,6 @@
 #https://leetcode.com/problems/champagne-tower/
-
+# Runtime: 204 ms, faster than 27.87% of Python3 online submissions for Champagne Tower.
+# Memory Usage: 14.8 MB, less than 6.56% of Python3 online submissions for Champagne Tower.
 
 
 
