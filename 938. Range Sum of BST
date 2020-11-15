@@ -1,4 +1,37 @@
 # https://leetcode.com/problems/range-sum-of-bst/
+
+#new solution by traversing the tree
+
+
+# Runtime: 276 ms, faster than 21.91% of Python3 online submissions for Range Sum of BST.
+# Memory Usage: 22.1 MB, less than 33.01% of Python3 online submissions for Range Sum of BST.
+    
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def rangeSumBST(self, root: TreeNode, low: int, high: int) -> int:
+        if not root: return 0
+        
+        self.counter = 0
+
+        def traverseTree(root) -> None:
+            if not root: return
+        
+        
+            if root.val >= low and root.val <= high:
+                self.counter += root.val
+            traverseTree(root.left)
+            traverseTree(root.right)
+
+            
+        traverseTree(root)
+        return self.counter
+    
+#############################################
 # Steps :
 # 1) Using stack
 
