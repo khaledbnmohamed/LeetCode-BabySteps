@@ -23,4 +23,4 @@ class Solution:
                 end = i
                 dict[s[i]] = i
         last_sub = min(len(s),(end+1)-start)
-        return max(max_sub,(end)-start,last_sub)            
+        return max(max_sub,last_sub)            
